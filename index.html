@@ -1,0 +1,136 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="wclassth=device-wclassth, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<header>
+    
+
+</header>
+
+<body>
+
+    <style>
+        .p1 {
+            color: antiquewhite;
+            background-color: pink;
+        }
+        .p2 {
+            color: beige;
+            background-color: rgb(118, 83, 89);
+        }
+        .p3 {
+            color: white;
+            background-color: rgb(191, 121, 133);
+        }
+        .p4 {
+            color: azure;
+            background-color: rgb(132, 70, 81);
+        }
+    </style>
+    
+    <main>
+        <h1 class="Class 1 Lab"></h1>
+        <h1>Class 1 Lab</h1>
+
+    </main>
+    <p class="p1" id="name">
+        What is your name?
+    </p>
+    
+    <p class="p2" id="color">
+        What is your favorite color?
+    </p>
+    
+    <p class="p3" id="music">
+        Who is your favorite musical artist?
+    </p>
+    
+    <p class="p4" id="football">
+        Who is the best college football team?
+    </p>
+    
+    <footer>
+
+
+    </footer>
+
+<script>
+
+    // let answr1=prompt('What is your name?');
+    // let answr2=prompt('What is your favorite color?');
+    // let answr3=prompt('Who is your favorite musical artist?');
+    // let answr4=prompt('Who is the best college football team?');
+
+    let name = "";
+    let color = "";
+    let music = "";
+    let football = "";
+
+
+function nameinput() {
+    name = prompt("What is your name?");
+        if (name != "") {
+            alert('Welcome '  + name);
+            document.getElementById("name").innerHTML = "Hi " + name;
+        } else {
+            alert('Did you lose your nametag Spongebob?');
+        }
+
+}
+
+function colorinput() {
+    color = prompt("What is your favorite color?");
+        if (color != "") {
+            alert('Mine too! U+1F606');
+            document.getElementById("color").innerHTML = name + 's favorite color is ' + color;
+        } else {
+            alert('BORING!');
+        }
+
+}
+
+function musicinput() {
+    music = prompt("Who is your favorite musical artist?");
+        if (music != "") {
+            alert('Never Heard of Them U+1F440');
+            document.getElementById("music").innerHTML = name + ' likes ' + music;
+        } else {
+            alert('You dont listen to music?');
+        }
+
+}
+
+function footballinput() {
+    football = prompt("Who is the best college football team?");
+        if (football != "") {
+            alert('Gross!');
+            document.getElementById("football").innerHTML = name + " likes " + football;
+        } else {
+            alert('Come on man...');
+        }
+
+}
+
+nameinput();
+colorinput();
+musicinput();
+footballinput();
+
+
+    // document.getElementById('userInputName').innerHTML = "Hello " + answr1;
+    // document.getElementById('userInputFood').innerHTML = answr1 + ", that's mine too!";
+    // document.getElementById('userInputMusic').innerHTML = answr3;
+    // document.getElementById('userInputFootball').innerHTML = answr4;
+
+</script>
+
+</body>
+
+
+
+
+</html>
